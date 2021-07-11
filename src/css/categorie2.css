@@ -1,0 +1,126 @@
+/*BACKGROUNDS*/
+
+.bg-movies {
+    background-image: url(../img/backgrounds/background-movie.jpg);
+}
+
+.bg-movies2 {
+    background-image: url(../img/backgrounds/background-movie2.jpg);
+}
+
+.bg-movies3 {
+    background-image: url(../img/backgrounds/background-movie3.jpg);
+    background-position: left 20% top 50%
+}
+
+.bg-black {
+    background-color: rgba(15, 23, 30, 0.6);
+    position: relative;
+    z-index: 200;
+    height: 100%;
+}
+
+
+/* CARDS EFFECT*/
+
+.card:hover {
+    transform: translateY(-.5rem);
+}
+
+
+/*JUMBOTRON*/
+
+.jumbotron-movies {
+    height: 80vh;
+    z-index: 1000;
+    position: relative;
+    color: var(--var-white);
+}
+
+.jumbotron-movies-overlay {
+    display: flex;
+    position: absolute;
+    z-index: 1200;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(22, 35, 72, .2);
+}
+
+.jumbotron-movies-overlay img {
+    height: 10rem;
+    width: 8rem;
+}
+
+.jumbotron-movies-overlay h1 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    position: relative;
+    z-index: 1000;
+}
+
+.col:nth-child(1) {
+    width: 200%;
+}
+
+#cinema-ticket {
+    position: absolute;
+    z-index: 200;
+    width: 33%;
+    transform: rotate(-40deg);
+    top: 15rem;
+}
+
+
+/*BACKGROUNDS CARDS*/
+
+.bg-coffee_an_kareem,
+.bg-contagion,
+.bg-donnybrook,
+.bg-greyhound,
+.bg-guns-akimbo,
+.bg-joy,
+.bg-la_casa_de_papel,
+.bg-mayhem,
+.bg-invictus {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-coffee_an_kareem {
+    background-image: url(../img/videos_overlays/coffee_an_kareem.jpg);
+}
+
+.bg-contagion {
+    background-image: url(../img/videos_overlays/contagion.jpg);
+}
+
+.bg-donnybrook {
+    background-image: url(../img/videos_overlays/donnybrook.jpg);
+}
+
+.bg-greyhound {
+    background-image: url(../img/videos_overlays/greyhound.jpg);
+}
+
+.bg-guns-akimbo {
+    background-image: url(../img/videos_overlays/guns-akimbo.jpg);
+}
+
+.bg-joy {
+    background-image: url(../img/videos_overlays/joy.jpg);
+}
+
+.bg-la_casa_de_papel {
+    background-image: url(../img/videos_overlays/la_casa_de_papel.jpg);
+}
+
+.bg-mayhem {
+    background-image: url(../img/videos_overlays/mayhem.jpg);
+}
+
+.bg-invictus {
+    background-image: url(../img/videos_overlays/invictus.jpg);
+}

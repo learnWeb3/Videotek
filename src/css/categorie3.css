@@ -1,0 +1,163 @@
+    /*BACKGROUNDS*/
+    
+    .bg-anime1 {
+        background-image: url(../img/backgrounds/background-anime1.jpg);
+        position: relative;
+        z-index: 350;
+    }
+    
+    .bg-anime2 {
+        background-image: url(../img/backgrounds/background-anime2.jpg);
+        position: relative;
+        z-index: 250;
+    }
+    
+    .bg-anime3 {
+        background-image: url(../img/backgrounds/background-anime3.jpg);
+        position: relative;
+        z-index: 150;
+    }
+    
+    .bg-black {
+        background-color: rgba(15, 23, 30, 0.45);
+        position: relative;
+        z-index: 400;
+        height: 100%;
+    }
+    /* CARDS EFFECT*/
+    
+    .card:hover {
+        transform: translateY(-.5rem);
+    }
+    /*JUMBOTRON*/
+    
+    .nav-overlay {
+        display: flex;
+        position: absolute;
+        z-index: 1200;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(12, 37, 71, .07);
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .jumbotron-anime {
+        height: 100vh;
+        position: relative;
+        z-index: 1000;
+        color: var(--var-white);
+    }
+    
+    .jumbotron-anime-overlay {
+        display: flex;
+        position: absolute;
+        z-index: 1200;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(12, 37, 71, 0.212);
+    }
+    
+    .jumbotron-anime-overlay img {
+        height: 10rem;
+        width: 8rem;
+    }
+    
+    .jumbotron-anime-overlay h1 {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    
+    .col:nth-child(1) {
+        width: 250%;
+    }
+    
+    #animated-background {
+        width: 40rem;
+        height: 40rem;
+        position: absolute;
+        justify-self: center;
+        z-index: 100;
+        border-radius: 50%;
+        box-shadow: 0px 0px 50px 6px rgba(255, 255, 255, 1);
+    }
+    /*BLOCKQUOTE*/
+    
+    blockquote {
+        font-size: 3.5rem;
+        margin-left: 2rem;
+    }
+    
+    blockquote::before {
+        content: "\00AB";
+        margin-right: 1rem;
+    }
+    
+    blockquote::after {
+        content: "\00BB";
+        margin-left: 1rem;
+    }
+    /*BACKGROUNDS CARDS*/
+    
+    .bg-a-silent-voice,
+    .bg-blame,
+    .bg-fireworks,
+    .bg-flavors_of_youth,
+    .bg-la_tour_au_dessus_des_nuages,
+    .bg-les_enfants_de_la_mer,
+    .bg-les_enfants_du_temps,
+    .bg-one_piece_film_Z,
+    .bg-ponyo,
+    .bg-kengan-ashura,
+    .bg-the-cat-returns {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .bg-a-silent-voice {
+        background-image: url(../img/videos_overlays/a_silent_voice.jpg);
+    }
+    
+    .bg-blame {
+        background-image: url(../img/videos_overlays/blame.jpg);
+    }
+    
+    .bg-fireworks {
+        background-image: url(../img/videos_overlays/fireworks.jpg);
+    }
+    
+    .bg-flavors_of_youth {
+        background-image: url(../img/videos_overlays/flavors_of_youth.jpg);
+    }
+    
+    .bg-la_tour_au_dessus_des_nuages {
+        background-image: url(../img/videos_overlays/la_tour_au_dessus_des_nuages.jpg);
+    }
+    
+    .bg-les_enfants_de_la_mer {
+        background-image: url(../img/videos_overlays/Les_Enfants_de_la_mer.jpg);
+    }
+    
+    .bg-les_enfants_du_temps {
+        background-image: url(../img/videos_overlays/les_enfants_du_temps.jpg);
+    }
+    
+    .bg-one_piece_film_Z {
+        background-image: url(../img/videos_overlays/one_piece_film_Z.jpg);
+    }
+    
+    .bg-ponyo {
+        background-image: url(../img/videos_overlays/ponyo.jpg);
+    }
+    
+    .bg-kengan-ashura {
+        background-image: url(../img/videos_overlays/kengan_ashura.jpg.jpg);
+    }
+    
+    .bg-the-cat-returns {
+        background-image: url(../img/videos_overlays/the-cat-returns.jpg);
+    }

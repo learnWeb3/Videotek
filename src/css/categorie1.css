@@ -1,0 +1,137 @@
+/*BACKGROUNDS*/
+
+.bg-series {
+    background-image: url(../img/backgrounds/background_series.jpeg);
+}
+
+.bg-black {
+    background-color: rgba(15, 23, 30, 0.8);
+    position: relative;
+    z-index: 200;
+    height: 100%;
+}
+
+
+/* CARDS EFFECT*/
+
+.card:hover {
+    transform: translateY(-.5rem);
+}
+
+
+/*JUMBOTRON*/
+
+.nav-overlay {
+    display: flex;
+    position: absolute;
+    z-index: 1200;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jumbotron-séries {
+    position: relative;
+    height: 100vh;
+    z-index: 1000;
+    position: relative;
+    color: var(--var-white);
+    background-image: url(../img/backgrounds/banner_background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.jumbotron-séries-overlay {
+    bottom: 0;
+    display: flex;
+    position: absolute;
+    z-index: 1200;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.jumbotron-séries-overlay img {
+    height: 10rem;
+    width: 8rem;
+}
+
+.jumbotron-séries-overlay h1 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.col:nth-child(1) {
+    width: 200%;
+}
+
+
+/*BACKGROUNDS CARDS*/
+
+.bg-dare-me,
+.bg-hanna,
+.bg-intimidation,
+.bg-la-plateforme,
+.bg-locke-and-key,
+.bg-joy,
+.bg-servante,
+.bg-unbelivable,
+.bg-euphoria,
+.bg-mortel,
+.bg-the-cat-returns {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-dare-me {
+    background-image: url(../img/videos_overlays/dare-me.jpg);
+}
+
+.bg-hanna {
+    background-image: url(../img/videos_overlays/hanna.jpg);
+}
+
+.bg-intimidation {
+    background-image: url(../img/videos_overlays/INTIMIDATION.jpg);
+}
+
+.bg-la-plateforme {
+    background-image: url(../img/videos_overlays/la-plateforme.webp);
+}
+
+.bg-locke-and-key {
+    background-image: url(../img/videos_overlays/LOCKE_&_KEY.webp);
+}
+
+.bg-joy {
+    background-image: url(../img/videos_overlays/joy.jpg);
+}
+
+.bg-servante {
+    background-image: url(../img/videos_overlays/servant.jpg);
+}
+
+.bg-unbelivable {
+    background-image: url(../img/videos_overlays/unbelivable.webp);
+}
+
+.bg-euphoria {
+    background-image: url(../img/videos_overlays/EUPHORIA.jpg);
+}
+
+.bg-mortel {
+    background-image: url(../img/videos_overlays/MORTEL.jpg);
+}
+
+.bg-the-cat-returns {
+    background-image: url(../img/videos_overlays/the-cat-returns.jpg);
+}

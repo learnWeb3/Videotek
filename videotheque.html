@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kalene A PIOU, LE GUILLOU Antoine">
+    <meta name="description" content="VIDEOTEK: Films, Séries, Anime en Streaming 100% Gratuit ! ">
+    <meta name="keywords" content="streaming, séries, anime, films, gratuit">
+    <title>VIDEOTEK: Bienvenue</title>
+    <!--OWN STYLES-->
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/videotheque.css">
+
+    <!--FONT AWESOME CDN-->
+    <script src="https://kit.fontawesome.com/0d31d40fe5.js" crossorigin="anonymous"></script>
+
+    <!--JQUERY MICROSOFT CDN-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+    <!--OWN SCRIPTS-->
+    <script src="src/js/showDescriptionOnHover.js"></script>
+    <script src="src/js/playPauseOverlayLandingPage.js"></script>
+    <script src="src/js/playVideoClickedOnPlayerModal.js"></script>
+
+</head>
+
+<body>
+    <div class="bg-black">
+        <header class="bg-gradient">
+            <nav class="relative">
+                <ul>
+                    <li>
+                        <a href="videotheque.html" class="nav-link"><img src="src/img/logos/logo_brand1_light.png"
+                                class="nav-brand" alt="logo brand icon"></a>
+                    </li>
+                </ul>
+                <ul id="categories">
+                    <li><a href="categorie1.html" class="nav-link">Séries</a></li>
+                    <li><a href="categorie2.html" class="nav-link">Film</a></li>
+                    <li><a href="categorie3.html" class="nav-link">Anime</a></li>
+                </ul>
+
+                <div class="form-group">
+                    <form action="/search_films.php " method="GET" target="_self" id="form_search_film">
+                        <input type="search" id="nav-search" name="nav-search"
+                            placeholder="Rechercher un film, une série, un anime...">
+                    </form>
+                    <button type="submit" form="form_search_film" value="submit" class="search-button"><img
+                            src="src/img/icons/play_rounded_button.png" alt="play rounded button"
+                            class="button-search-nav"></button>
+                </div>
+            </nav>
+            <section class="jumbotron-landing-page relative">
+                <video autoplay muted loop id="video-landing-page">
+                    <source src="src/video/animes/a_silent_voice.mp4" type="video/mp4">
+                    <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                        Voici <a href="src/video/animes/a_silent_voice.mp4">un lien pour télécharger la vidéo</a></p>
+                </video>
+                <div class="video-overlay">
+                    <div class="col"></div>
+                    <div class="col justify-center">
+                        <h1>VIDEOTEK, <br>le meilleur de la vidéo sur tous vos écrans.</h1>
+                    </div>
+                    <div class="col justify-center">
+                        <a href="#value-proposition" id="pauseButton" onclick="playPauseVideoWithButton()"><img
+                                src="src/img/icons/pause_button.png" id="play-pause-switch" style="height: 10rem;
+                            width: 10rem;" alt="play pause icon button"></a>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+
+            <section id="value-proposition" class="p-4 text-white">
+                <div class="row">
+                    <div class="card-special hover-scale">
+                        <i class="fas fa-film fa-8x mt-2">
+                        </i>
+                        <h4 class="my-2">Le meilleur du cinéma, des séries et anime réunis</h4>
+                    </div>
+                    <div class="card-special hover-scale">
+                        <i class="fas fa-award fa-8x mt-2"></i>
+                        <h4 class="my-2">Elue plateforme préférée des français 2019</h4>
+                    </div>
+                    <div class="card-special hover-scale">
+                        <i class="fas fa-users fa-8x mt-2"></i>
+                        <h4 class="my-2">Mise à jour des contenus par la communauté</h4>
+                    </div>
+                </div>
+            </section>
+
+            <!--SECTION SERIES-->
+            <section class="p-4" id="series-top-rated">
+
+
+                <h3 class="text-white ml-5">Top Séries du moment: </h3>
+
+                <div class="row my-2">
+
+                    <!--CARD START 1-->
+                    <div class="card hover-translate">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Dans une prison-tour, une dalle transportant de la nourriture descend d'étage en
+                                    étage, un système qui favorise les premiers servis et affame les derniers.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/la-plateforme.webp">
+                                <source src="src/video/series/laplateforme.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/series/laplateforme.mp4">un
+                                        lien pour télécharger la vidéo souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png"
+                                        alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">La plateforme</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+
+
+                    <!--CARD START 2-->
+                    <div class="card hover-translate">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>L'histoire de deux anciens amants qui, 15 ans auparavant, ont fait un pacte. Un pacte
+                                    où ils s'engageaient à disparaître ensemble si jamais l'un d'entre eux, ayant besoin
+                                    de s'échapper de sa vie, avait envoyé ce simple
+                                    et unique texto disant : "RUN".
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/run.jpg">
+                                <source src="src/video/series/run.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/series/run.mp4">un
+                                        lien pour télécharger la vidéo souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png"
+                                        alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">RUN</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+                    <!--CARD START 3-->
+                    <div class="card hover-translate">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>L'histoire vraie de Marie, une adolescente accusée d'avoir menti sur le fait d'avoir
+                                    été violée, et de l'enquête menée par deux détectives.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/unbelivable.webp">
+                                <source src="src/video/series/unbelievable.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/series/unbelievable.mp4">un
+                                        lien pour télécharger la vidéo souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png"
+                                        alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">UNBELIEVABLE</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+
+
+                </div>
+
+
+            </section>
+
+
+            <!--SECTION FILMS-->
+            <section class="p-4" id="movies-top-rated">
+
+
+                <h3 class="text-white ml-5">Top Films du moment: </h3>
+
+                <div class="row my-2">
+
+
+                    <!--CARD START 1-->
+                    <div class="card hover-translate">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-donnybrook">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Non seulement il est prêt à tout pour nourrir ses enfants, mais c'est aussi un
+                                    combattant redoutable. Le Donnybrook, un tournoi de combat à poings nus qui se
+                                    déroule dans les forêts de l'Indiana, consitue pour lui une chance
+                                    unique d'accéder à une vie meilleure.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/donnybrook.jpg">
+                                <source src="src/video/films/donnybrook.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/films/donnybrook.mp4">un lien pour
+                                        télécharger la vidéo souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png"
+                                        alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">Donnybrook</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+
+
+                    <!--CARD START 2-->
+                    <div class="card hover-translate">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-guns-akimbo">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Miles est un développeur de jeux vidéo qui, par inadvertance, devient le prochain
+                                    participant à un match à mort réel diffusé en ligne. Bien que Miles excelle dans
+                                    l'art de fuir tout, cela ne l'aidera pas à survivre à un
+                                    tueur au sommet de son art.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/guns-akimbo.jpg">
+                                <source src="src/video/films/guns_akimbo.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/films/guns_akimbo.mp4">un
+                                        lien pour télécharger la vidéo souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png"
+                                        alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">GUNS AKIMBO</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+
+                    <!--CARD START 3-->
+                    <div class="card hover-translate">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-joy">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Le fascinant et émouvant parcours, sur 40 ans, d'une femme farouchement déterminée à
+                                    réussir, en dépit de son excentrique et dysfonctionnelle famille, et à fonder un
+                                    empire d'un milliard de dollars. Au-delà de la femme
+                                    d'exception, Joy incarne le rêve américain dans cette comédie dramatique, mêlant
+                                    portrait de famille, trahisons, déraison et sentiments.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/joy.jpg">
+                                <source src="src/video/films/joy.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/films/joy.mp4">un
+                                        lien pour télécharger la vidéo souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png"
+                                        alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">JOY</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+
+                </div>
+
+
+            </section>
+
+            <!--SECTION ANIME-->
+            <section class="p-4" id="anime-top-rated">
+
+
+                <h3 class="text-white ml-5">Top Anime du moment: </h3>
+
+                <div class="row my-2">
+
+
+
+                    <!--CARD START 1-->
+                    <div class="card hover-translate">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-les_enfants_de_la_mer">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Ruka, jeune lycéenne, vit avec sa mère. Elle se consacre à sa passion, le handball.
+                                    Hélas, elle se fait exclure de son équipe le premier jour des vacances. Furieuse,
+                                    elle décide de rendre visite à son père à l'aquarium
+                                    où il travaille. Elle y rencontre Umi, qui semble avoir le don de communiquer avec
+                                    les animaux marins. Ruka est fascinée. Un soir, des événements surnaturels se
+                                    produisent.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/Les_Enfants_de_la_mer.jpg">
+                                <source src="src/video/animes/les_enfants_de_la_mer.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/animes/les_enfants_de_la_mer.mp4">un
+                                        lien pour télécharger la vidéo souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png"
+                                        alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">Les enfants de la mer</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+
+                    <!--CARD START 2-->
+                    <div class="card hover-translate">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-les_enfants_du_temps">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Jeune lycéen, Hodaka fuit son île pour rejoindre Tokyo. Sans argent ni emploi, il
+                                    tente de survivre dans la jungle urbaine et trouve un poste dans une revue dédiée au
+                                    paranormal.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/les_enfants_du_temps.jpg">
+                                <source src="src/video/animes/les_enfants_du_temps.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/animes/les_enfants_du_temps.mp4">un
+                                        lien pour télécharger la vidéo souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png"
+                                        alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">Les enfants du temps</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+                    <!--CARD START 3-->
+                    <div class="card hover-translate">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-ponyo">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Le petit Sosuke, cinq ans, habite un village construit au sommet d'une falaise qui
+                                    surplombe la Mer Intérieure. Un beau matin, alors qu'il joue sur la plage en
+                                    contrebas, il découvre une petite fille poisson rouge nommée
+                                    Ponyo, piégée dans un pot de confiture. Sosuke la sauve, et décide de la garder avec
+                                    lui dans un seau. Ponyo est aussi fascinée par Sosuke que ce dernier l'est par elle.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/ponyo.jpg">
+                                <source src="src/video/animes/ponyo.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/animes/ponyo.mp4">un lien pour
+                                        télécharger la vidéo souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png"
+                                        alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">Ponyo Sur la Falaise</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+
+                </div>
+
+
+            </section>
+
+
+
+
+        </main>
+
+
+        <section id="modal-video-player" class="h-0 w-0">
+
+            <img src="src/img/icons/exit.png" id="video-modal-close" alt="icon modal close">
+
+
+            <div class="video-container">
+
+                <video autoplay controls id="video-player-modal">
+                    <source src="src/video/landing_page/landing_page.mp4" type="video/mp4">
+                    <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                        Voici <a href="myVideo.mp4">un lien pour télécharger la vidéo</a></p>
+                </video>
+
+
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="social-networks social">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/kalene-a-piou/Videotheque"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="social">
+                <a href="videotheque.html">Accueil</a>
+                <a href="categorie1.html">Series</a>
+                <a href="categorie2.html">Animes</a>
+                <a href="categorie3.html">Films</a>
+            </div>
+            <div class="partner">
+                <h4>Partenaire</h4>
+                <a href="https://www.adkami.com/">Adkami</a>
+                <a href="http://www.anime-ultime.net/">Anime Ultime</a>
+                <a href="https://www.animeka.com/">Animeka</a>
+                <a href="https://www.netflix.com/">Netflix</a>
+            </div>
+            <hr class="mb-1">
+            <div class="contact">
+                <a
+                    href="https://www.rocketlawyer.com/fr/fr/sem/site-internet-mentions-legales-et-politique-de-confidentialite?gclid=Cj0KCQjwyPbzBRDsARIsAFh15Jb0SM3xB8_lw3q2bc6eG1B-aO74ayaQoYnBAgo3EZeu6o43qWNser4aAnRJEALw_wcB">Mention
+                    légales</a>
+                <a href="https://twitter.com/kaleneapiou">Contact</a>
+            </div>
+            <div class="copyright">
+                <p>© Industrie videoTek | 2020</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        window.load = showDescriptionOnHover();
+        window.load = playVideoClickedOnPlayerModal();
+    </script>
+    <script src="src/js/checkZoom.js"></script>
+</body>
+
+</html>

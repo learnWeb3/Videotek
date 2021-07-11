@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kalene A PIOU, LE GUILLOU Antoine">
+    <meta name="description" content="VIDEOTEK: Films, Séries, Anime en Streaming 100% Gratuit ! ">
+    <meta name="keywords" content="streaming, séries, anime, films, gratuit">
+    <title>VIDEOTEK: Films</title>
+    <!--OWN STYLES-->
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/categorie2.css">
+    <!--FONT AWESOME CDN-->
+    <script src="https://kit.fontawesome.com/0d31d40fe5.js" crossorigin="anonymous"></script>
+    <!--JQUERY MICROSOFT CDN-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+    <!--OWN SCRIPTS-->
+    <script src="src/js/showDescriptionOnHover.js"></script>
+    <script src="src/js/playPauseOverlayLandingPage.js"></script>
+    <script src="src/js/playVideoClickedOnPlayerModal.js"></script>
+</head>
+
+<body class="bg-movies3">
+    <div class="bg-black">
+
+
+        <header>
+            <nav class="z-10000 relative">
+                <ul>
+                    <li>
+                        <a href="videotheque.html"><img src="src/img/logos/logo_brand1_light.png" class="nav-brand" alt="logo brand icon"></a>
+                    </li>
+                </ul>
+                <ul id="categories">
+                    <li><a href="categorie1.html">Séries</a></li>
+                    <li><a href="categorie3.html">Anime</a></li>
+                </ul>
+
+                <div class="form-group">
+                    <form action="/search_films.php " method="GET" target="_self" id="form_search_film">
+                        <input type="search" id="nav-search" name="nav-search" placeholder="Rechercher un film, une série, un anime...">
+                    </form>
+                    <button type="submit" form="form_search_film" value="submit" class="search-button"><img
+                            src="src/img/icons/play_rounded_button.png" class="button-search-nav" alt="play button rounded icon"></button>
+                </div>
+            </nav>
+            <img src="src/img/backgrounds/cinema_background.png" id="cinema-ticket" alt="cinema ticket photo in background">
+            <section class="jumbotron-movies">
+                <div class="jumbotron-movies-overlay">
+                    <div class="col justify-center bg-cinema">
+
+
+                        <h1>Les meilleurs films du moment, sur tous vos écrans</h1>
+                    </div>
+                    <div class="col justify-center">
+                        <a href="#cards"><img src="src/img/icons/play_button.png" alt="play button icon"></a>
+                    </div>
+                    <div class="col"></div>
+
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="p-4">
+
+                <div class="row">
+                    <h1>Tendance atuelles</h1>
+                    <!--CARD START 1-->
+                    <div class="card">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-coffee_an_kareem">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Un policier de Détroit doit faire équipe, à contrecoeur, avec le fils âgé d'onze ans de sa petite amie afin de mettre la main sur le criminel le plus impitoyable de la ville et ainsi retrouver son honneur.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/coffee_an_kareem.jpg">
+                                <source src="src/video/films/coffee_an_kareem.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/films/coffee_an_kareem.mp4">un lien pour
+                                        télécharger la vidéo souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png" alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">Coffee and Kareem</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+                    <!--CARD START 2-->
+                    <div class="card">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-contagion">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Peu après son retour d'un voyage d'affaires à Hong Kong, Beth Emhoff décède subitement d'une infection inconnue. Son jeune fils meurt un peu plus tard, le même jour qu'elle. En revanche, Mitch, son mari, semble hors de
+                                    danger. Une épidémie à l'échelle mondiale voit bientôt le jour. La situation est extrêmement grave et l'infection fait bientôt de très nombreux morts.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/contagion.jpg">
+                                <source src="src/video/films/contagion.mp4"
+                                    type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/films/contagion.mp4">un
+                                        lien pour télécharger la vidéo souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png" alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">Contagion</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+
+
+                    <!--CARD START 3-->
+                    <div class="card">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-donnybrook">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Non seulement il est prêt à tout pour nourrir ses enfants, mais c'est aussi un combattant redoutable. Le Donnybrook, un tournoi de combat à poings nus qui se déroule dans les forêts de l'Indiana, consitue pour lui une chance
+                                    unique d'accéder à une vie meilleure.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/donnybrook.jpg">
+                                <source src="src/video/films/donnybrook.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/films/donnybrook.mp4">un lien pour
+                                        télécharger la vidéo souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png" alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">Donnybrook</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+
+                    <!--CARD START 4-->
+                    <div class="card">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-greyhound">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>L'histoire du capitaine Ernest Krause, un militaire de la Navy, commande le Greyhound, un bateau qui aide les Alliés à traverser l'Atlantique pour combattre le régime nazi allemand, est adapté du roman de C.S. Forester,
+                                    'The Good Shepherd'.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/greyhound.jpg">
+                                <source
+                                    src="src/video/films/greyhound.mp4"
+                                    type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a
+                                        href="src/video/films/greyhound.mp4">un
+                                        lien pour télécharger la vidéo souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png" alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">GREYHOUND</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+
+                    <!--CARD START 5-->
+                    <div class="card">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-guns-akimbo">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Miles est un développeur de jeux vidéo qui, par inadvertance, devient le prochain participant à un match à mort réel diffusé en ligne. Bien que Miles excelle dans l'art de fuir tout, cela ne l'aidera pas à survivre à un
+                                    tueur au sommet de son art.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/guns-akimbo.jpg">
+                                <source src="src/video/films/guns_akimbo.mp4"
+                                    type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/films/guns_akimbo.mp4">un
+                                        lien pour télécharger la vidéo souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png" alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">GUNS AKIMBO</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+
+                    <!--CARD START 6-->
+                    <div class="card">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-joy">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Le fascinant et émouvant parcours, sur 40 ans, d'une femme farouchement déterminée à réussir, en dépit de son excentrique et dysfonctionnelle famille, et à fonder un empire d'un milliard de dollars. Au-delà de la femme
+                                    d'exception, Joy incarne le rêve américain dans cette comédie dramatique, mêlant portrait de famille, trahisons, déraison et sentiments.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/joy.jpg">
+                                <source src="src/video/films/joy.mp4"
+                                    type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a
+                                        href="src/video/films/joy.mp4">un
+                                        lien pour télécharger la vidéo souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png" alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">JOY</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+
+                    <!--CARD START 7-->
+                    <div class="card">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-la_casa_de_papel">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Huit voleurs font une prise d'otages dans la Maison royale de la Monnaie d'Espagne, tandis qu'un génie du crime manipule la police pour mettre son plan à exécution.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/la_casa_de_papel.jpg">
+                                <source
+                                    src="src/video/films/la_casa_de_papel.mp4"
+                                    type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/films/la_casa_de_papel.mp4">un
+                                        lien pour télécharger la vidéo souhaité</a>.
+                                </p>
+                            </video>
+
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png" alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">La Casa De Papel</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+
+                    <!--CARD START 8-->
+                    <div class="card">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-mayhem">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Injustement remercié par ses employeurs dans un cabinet d'avocats. Derek prépare son départ en ruminant sa ranc?ur. Au même moment. le mystérieux virus ID7 se répand. transformant chaque employé en individu deshinibé et
+                                    cruel. obéissant à ses pulsions primaires... Derek va-t-il en profiter pour se venger ? il va devoir avant tout lutter pour sa survie...
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/mayhem.jpg">
+                                <source src="src/video/films/mayhem.mp4"
+                                    type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/films/mayhem.mp4">un lien
+                                        pour télécharger la vidéo souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png" alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">MAYHEM</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+        <!--MODAL OVERLAY DISPLAY SWITCH-->
+        <section id="modal-video-player" class="h-0 w-0">
+
+            <img src="src/img/icons/exit.png" id="video-modal-close" alt="video modal player close button icon">
+
+
+            <div class="video-container">
+
+                <video autoplay controls id="video-player-modal">
+                    <source src="src/video/landing_page/landing_page.mp4" type="video/mp4">
+                    <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                        Voici <a href="myVideo.mp4">un lien pour télécharger la vidéo</a></p>
+                </video>
+
+
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="social-networks social">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/kalene-a-piou/Videotheque"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="social">
+                <a href="videotheque.html">Accueil</a>
+                <a href="categorie1.html">Series</a>
+                <a href="categorie2.html">Animes</a>
+                <a href="categorie3.html">Films</a>
+            </div>
+            <div class="partner">
+                <h4>Partenaire</h4>
+                <a href="https://www.adkami.com/">Adkami</a>
+                <a href="http://www.anime-ultime.net/">Anime Ultime</a>
+                <a href="https://www.animeka.com/">Animeka</a>
+                <a href="https://www.netflix.com/">Netflix</a>
+            </div>
+            <hr class="mb-1">
+            <div class="contact">
+                <a href="https://www.rocketlawyer.com/fr/fr/sem/site-internet-mentions-legales-et-politique-de-confidentialite?gclid=Cj0KCQjwyPbzBRDsARIsAFh15Jb0SM3xB8_lw3q2bc6eG1B-aO74ayaQoYnBAgo3EZeu6o43qWNser4aAnRJEALw_wcB">Mention
+                    légales</a>
+                <a href="https://twitter.com/kaleneapiou">Contact</a>
+            </div>
+            <div class="copyright">
+                <p>© Industrie videoTek | 2020</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        window.load = showDescriptionOnHover();
+        playVideoClickedOnPlayerModal();
+    </script>
+     <script src="src/js/checkZoom.js"></script>
+</body>
+
+</html>

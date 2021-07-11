@@ -1,0 +1,33 @@
+html{
+    /*TYPO SIZE BASE 8PX*/
+    --base-font-size: 4px;
+}
+
+.card{
+    transform: scale(.75);
+}
+.hover-translate:hover {
+    transform: translateY(-.5rem) scale(.75);
+}
+
+@media screen and (min-width:1280px) {
+    /*SPECIFIC SIZE FOR CARDS */
+    #movies-top-rated .card:nth-child(2) {
+        transform: scale(1);
+    }
+    #series-top-rated .card:nth-child(3) {
+        transform: scale(1);
+    }
+    #anime-top-rated .card:nth-child(3) {
+        transform: scale(1);
+    }
+}
+
+.card-special{
+    height: 190px;
+    width: 190px;
+}
+
+.card-special h4 {
+    font-size: 16px;
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kalene A PIOU, LE GUILLOU Antoine">
+    <meta name="description" content="VIDEOTEK: Films, Séries, Anime en Streaming 100% Gratuit ! ">
+    <meta name="keywords" content="streaming, séries, anime, films, gratuit">
+    <title>VIDEOTEK: Séries</title>
+    <!--OWN STYLES-->
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/categorie1.css">
+    <!--FONT AWESOME CDN-->
+    <script src="https://kit.fontawesome.com/0d31d40fe5.js" crossorigin="anonymous"></script>
+    <!--JQUERY MICROSOFT CDN-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <!--OWN SCRIPTS-->
+    <script src="src/js/showDescriptionOnHover.js"></script>
+    <script src="src/js/playPauseOverlayLandingPage.js"></script>
+    <script src="src/js/playVideoClickedOnPlayerModal.js"></script>
+</head>
+
+<body class="bg-series">
+    <div class="bg-black">
+
+
+        <header>
+            <nav class="z-5000 relative">
+                <div class="nav-overlay">
+                    <ul>
+                        <li>
+                            <a href="videotheque.html"><img src="src/img/logos/logo_brand1_light.png" class="nav-brand"
+                                    alt="logo brand icon"></a>
+                        </li>
+                    </ul>
+                    <ul id="categories">
+                        <li><a href="categorie2.html" class="nav-link">Films</a></li>
+                        <li><a href="categorie3.html" class="nav-link">Anime</a></li>
+                    </ul>
+
+                    <div class="form-group">
+                        <form action="/search_films.php " method="GET" target="_self" id="form_search_film">
+                            <input type="search" id="nav-search" name="nav-search"
+                                placeholder="Rechercher un film, une série, un anime...">
+                        </form>
+                        <button type="submit" form="form_search_film" value="submit" class="search-button"><img
+                                src="src/img/icons/play_rounded_button.png" class="button-search-nav"
+                                alt="play button rounded icon"></button>
+                    </div>
+                </div>
+
+            </nav>
+
+            <section class="jumbotron-séries">
+                <div class="jumbotron-séries-overlay">
+                    <div class="col justify-center">
+
+                        <h1>Vos séries préférés à n'importe quel moment et en haute qualité</h1>
+                    </div>
+                    <div class="col justify-center">
+                        <a href="#cards"><img src="src/img/icons/play_button.png" alt="play button icon"></a>
+                    </div>
+                    <div class="col">
+                    </div>
+
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="p-4" id="cards">
+
+                <div class="row">
+                    <h1>Tendance atuelles</h1>
+                    <!--CARD START 1-->
+                    <div class="card">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-dare-me">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Une exploration de l'amitié féminine et de la sororité, des jalousies aux loyautés,
+                                    dans le lycée d'une petite ville du Midwest, du point de vue de deux jeunes femmes
+                                    cheerleaders, amies mais toujours en compétition.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/dare-me.jpg">
+                                <source src="src/video/series/dare_me.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/series/dare_me.mp4">un lien pour télécharger la vidéo
+                                        souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png"
+                                        alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">DARE ME</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+                    <!--CARD START 2-->
+                    <div class="card">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-hanna">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Hanna est une jeune adolescente de 14 ans de l'Europe de l'Est. Elle a été entraînée
+                                    pour devenir une machine à tuer de sang froid. Mais Hanna découvre qu'une autre vie
+                                    est possible...
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/hanna.jpg">
+                                <source src="src/video/series/hanna.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/series/hanna.mp4">un lien pour télécharger la vidéo
+                                        souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png"
+                                        alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">HANNA</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+                    <!--CARD START 3-->
+                    <div class="card">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-intimidation">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>On a tous des secrets. Inspirée du roman de Harlan Coben, la série Intimidation nous
+                                    force à aborder une question redoutable : connaissons-nous vraiment les personnes
+                                    qui nous entourent ?
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/INTIMIDATION.jpg">
+                                <source src="src/video/series/intimidation.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/series/intimidation.mp4">un lien pour télécharger la vidéo
+                                        souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png"
+                                        alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">INTIMIDATION</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+                    <!--CARD START 4-->
+                    <div class="card">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-la-plateforme">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Dans une prison-tour, une dalle transportant de la nourriture descend d'étage en
+                                    étage, un système qui favorise les premiers servis et affame les derniers.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/la-plateforme.webp">
+                                <source src="src/video/series/laplateforme.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/series/laplateforme.mp4">un lien pour télécharger la vidéo
+                                        souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png"
+                                        alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">La plateforme</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+                    <!--CARD START 5-->
+                    <div class="card">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-locke-and-key">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Après le meurtre de leur père dans d’étranges circonstances, les frères et sœurs
+                                    Locke emménagent avec leur mère à Keyhouse, leur maison ancestrale, où ils
+                                    découvrent des clés magiques potentiellement liées à la mort de
+                                    leur père. Alors que les enfants Locke explorent les pouvoirs uniques de ces clés,
+                                    un mystérieux démon s'éveille et ne reculera devant rien pour les leur voler.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/LOCKE_&_KEY.webp">
+                                <source src="src/video/series/locke_and_key.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/series/locke_and_key.mp4">un lien pour télécharger la vidéo
+                                        souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png"
+                                        alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">LOCKE & KEY</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+                    <!--CARD START 6-->
+                    <div class="card">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-run">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>L'histoire de deux anciens amants qui, 15 ans auparavant, ont fait un pacte. Un pacte
+                                    où ils s'engageaient à disparaître ensemble si jamais l'un d'entre eux, ayant besoin
+                                    de s'échapper de sa vie, avait envoyé ce simple
+                                    et unique texto disant : "RUN".
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/run.jpg">
+                                <source src="src/video/series/run.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/series/run.mp4">un lien pour télécharger la vidéo
+                                        souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png"
+                                        alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">RUN</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+                    <!--CARD START 7-->
+                    <div class="card">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-servante">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>Après avoir perdu son enfant, Dorothy Turner utilise une poupée à des fins
+                                    thérapeutiques. La situation prend une tournure étrange lorsque celle-ci engage une
+                                    nourrice pour s’occuper du bébé. Inquiet de la santé mentale
+                                    de son épouse, Sean ne voit pas l'arrivée de cette étrangère d'un très bon oeil.
+                                    D'autant que le comportement de la jeune fille se révèle vite troublant. La nounou
+                                    pourrait-elle devenir une menace ? Et les Turner auraient-ils
+                                    des choses à cacher ?
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/servant.jpg">
+                                <source src="src/video/series/servant.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/series/servant.mp4">un lien pour télécharger la vidéo
+                                        souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png"
+                                        alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">SERVANTE</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+                    <!--CARD START 8-->
+                    <div class="card">
+                        <div class="card-body bg-dark-light">
+                            <div class="card-overlay-appear p-2 display-none bg-unbelivable">
+
+                            </div>
+                            <div class="card-overlay-appear-layer2 display-none">
+                                <p>L'histoire vraie de Marie, une adolescente accusée d'avoir menti sur le fait d'avoir
+                                    été violée, et de l'enquête menée par deux détectives.
+                                </p>
+                            </div>
+
+
+                            <video poster="src/img/videos_overlays/unbelivable.webp">
+                                <source src="src/video/series/unbelievable.mp4" type="video/mp4">
+                                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                    Voici <a href="src/video/series/unbelievable.mp4">un lien pour télécharger la vidéo
+                                        souhaité</a>.</p>
+
+                            </video>
+                            <div class="video-lauch-overlay">
+                                <a class="video-button-lauch"><img src="src/img/icons/play_button.png"
+                                        alt="play button icon"></a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="relative z-1000">UNBELIEVABLE</h5>
+                        </div>
+                    </div>
+                    <!--CARD END -->
+
+
+                </div>
+
+
+            </section>
+
+        </main>
+        <!--MODAL OVERLAY DISPLAY SWITCH-->
+        <section id="modal-video-player" class="h-0 w-0">
+
+            <img src="src/img/icons/exit.png" id="video-modal-close" alt="modal video button close icon">
+
+
+            <div class="video-container">
+
+                <video autoplay controls id="video-player-modal">
+                    <source src="src/video/landing_page/landing_page.mp4" type="video/mp4">
+                    <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                        Voici <a href="myVideo.mp4">un lien pour télécharger la vidéo</a></p>
+                </video>
+
+
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="social-networks social">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/kalene-a-piou/Videotheque"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="social">
+                <a href="videotheque.html">Accueil</a>
+                <a href="categorie1.html">Series</a>
+                <a href="categorie2.html">Animes</a>
+                <a href="categorie3.html">Films</a>
+            </div>
+            <div class="partner">
+                <h4>Partenaire</h4>
+                <a href="https://www.adkami.com/">Adkami</a>
+                <a href="http://www.anime-ultime.net/">Anime Ultime</a>
+                <a href="https://www.animeka.com/">Animeka</a>
+                <a href="https://www.netflix.com/">Netflix</a>
+            </div>
+            <hr class="mb-1">
+            <div class="contact">
+                <a
+                    href="https://www.rocketlawyer.com/fr/fr/sem/site-internet-mentions-legales-et-politique-de-confidentialite?gclid=Cj0KCQjwyPbzBRDsARIsAFh15Jb0SM3xB8_lw3q2bc6eG1B-aO74ayaQoYnBAgo3EZeu6o43qWNser4aAnRJEALw_wcB">Mention
+                    légales</a>
+                <a href="https://twitter.com/kaleneapiou">Contact</a>
+            </div>
+            <div class="copyright">
+                <p>© Industrie videoTek | 2020</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        window.load = showDescriptionOnHover();
+        playVideoClickedOnPlayerModal();
+    </script>
+    <script src="src/js/checkZoom.js"></script>
+</body>
+
+</html>
